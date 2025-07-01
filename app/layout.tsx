@@ -1,12 +1,13 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import Head from 'next/head'
 
 
 
 export const metadata: Metadata = {
   title: 'Anor International School',
   description: 'Anor International School - Kelajak uchun ta\'lim berish',
-  themeColor:"#190b2e",
+  themeColor: "#190b2e",
   keywords: [
     'Anor International School',
     'O\'zbekiston maktabi',
@@ -29,8 +30,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="theme-color" content="#0f172a" />
+      </Head>
       <body>
-       {children}
+        {children}
       </body>
     </html>
   )
