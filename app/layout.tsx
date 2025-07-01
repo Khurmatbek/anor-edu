@@ -6,6 +6,7 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Anor International School',
   description: 'Anor International School - Kelajak uchun ta\'lim berish',
+  themeColor:"#190b2e",
   keywords: [
     'Anor International School',
     'O\'zbekiston maktabi',
