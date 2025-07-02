@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import Head from 'next/head'
 
 
 
@@ -29,6 +30,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="theme-color" content="#0f172a" />
+      </Head>
       <body>
         {children}
       </body>

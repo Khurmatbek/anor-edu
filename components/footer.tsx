@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Mail, Phone, LucideYoutube,  } from "lucide-react"
+import { Facebook, Instagram, Mail, Phone,  } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -30,9 +30,6 @@ export function Footer() {
                 <Instagram className="h-6 w-6 text-pink-600 hover:text-white cursor-pointer transition-colors duration-300" />
               </Link>
 
-              <Link href={"https://www.youtube.com/@AnorXalqaroMaktabi"} target="_blank" >
-                <LucideYoutube className="h-6 w-6 text-red-700 hover:text-white cursor-pointer transition-colors duration-300" />
-              </Link>
             </div>
           </div>
 
