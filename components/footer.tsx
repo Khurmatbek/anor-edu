@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-primary to-primary-800 text-white">
+    <footer className="bg-[#14253B]  text-white">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-2  justify-between">
           <div className="space-y-4">
@@ -40,10 +40,7 @@ export function Footer() {
                 <Phone className="h-5 w-5 text-white/80" />
                 <span className="text-white/80">+998 95-898-88-88</span>
               </a>
-              <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-white/80" />
-                <span className="text-white/80">info@anorinternational.uz</span>
-              </div>
+              
               <a href="https://yandex.uz/maps/-/CHgbNAlu" target="_blank" className="text-white/80 flex items-start justify-start  ">
 
                 Toshkent shahar  Olmazor tumani, Farobiy koʻchasi 259-uy

@@ -13,7 +13,6 @@ export function Hero() {
     router.push("#contact")
   }
   const handleViewVideo = () => {
-    // router.push("https://www.instagram.com/reel/DKM21buIh2Y/?utm_source=ig_web_copy_link&igsh=MTFtZXllOGV1MmpieA==");
     window.open("https://www.instagram.com/reel/DKM21buIh2Y/?utm_source=ig_web_copy_link&igsh=MTFtZXllOGV1MmpieA==", "_blank");
   }
 
@@ -24,7 +23,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen bg-gradient-to-br from-primary-950 via-primary-900 to-secondary-900 overflow-hidden"
+      className="relative min-h-screen  bg-[#14253A] overflow-hidden"
     >
       {/* Animated background elements */}
       <div className="absolute inset-0">
@@ -89,7 +88,7 @@ export function Hero() {
             <div className="grid grid-cols-3 gap-8 pt-8 border-t border-white/20">
               <div className="text-center">
                 <div className="text-3xl font-bold bg-gradient-to-r from-accent-400 to-secondary-400 bg-clip-text text-transparent">
-                  500+
+                  300+
                 </div>
                 <div className="text-white/70 text-sm">O'quvchilar</div>
               </div>
@@ -112,7 +111,7 @@ export function Hero() {
             <div className="relative z-10">
               <div className="bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/20">
                 <img
-                  src="/placeholder.svg?height=600&width=500"
+                  src="/hero.jpg"
                   alt="Anor International School"
                   className="rounded-2xl shadow-2xl w-full"
                 />
@@ -120,7 +119,7 @@ export function Hero() {
                 {/* Floating cards */}
                 <div className="absolute -top-4 -left-4 bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-xl animate-float">
                   <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-success-500 rounded-full flex items-center justify-center">
+                    <div className="w-10 h-10 bg-[#DD7C05] rounded-full flex items-center justify-center">
                       <School className="h-5 w-5 text-white" />
                     </div>
                     <div>
@@ -135,7 +134,7 @@ export function Hero() {
                   style={{ animationDelay: "1s" }}
                 >
                   <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-secondary-500 rounded-full flex items-center justify-center">
+                    <div className="w-10 h-10 bg-[#14253B] rounded-full flex items-center justify-center">
                       <Users className="h-5 w-5 text-white" />
                     </div>
                     <div>

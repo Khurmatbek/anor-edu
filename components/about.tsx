@@ -13,7 +13,7 @@ export function About() {
       icon: Users,
       title: "Tajribali o'qituvchilar",
       description: "Malakali va tajribali pedagog kadrlar",
-      color: "from-secondary-500 to-secondary-600",
+      color: "from-[#14253B] to-[#14253be1]",
     },
     {
       icon: Globe,
@@ -33,11 +33,11 @@ export function About() {
     <section id="about" className="py-20 bg-gradient-to-br from-gray-50 to-primary-50/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 bg-primary-100 rounded-full mb-6">
-            <Target className="h-4 w-4 text-primary-600 mr-2" />
-            <span className="text-primary-700 font-medium">Biz haqimizda</span>
+          <div className="inline-flex items-center px-4 py-2 bg-[#14253B] rounded-full mb-6">
+            <Target className="h-4 w-4 text-[#fff] mr-2" />
+            <span className="text-[#fff] font-medium">Biz haqimizda</span>
           </div>
-          <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-primary-900 to-secondary-700 bg-clip-text text-transparent mb-6">
+          <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#14253B] to-[#14253bbd] bg-clip-text text-transparent mb-6">
             Ta'lim sohasidagi liderlar
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -50,19 +50,19 @@ export function About() {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-br from-primary-200/50 to-secondary-200/50 rounded-3xl transform rotate-3"></div>
             <img
-              src="/placeholder.svg?height=500&width=600"
+              src="/ustozlar.jpg"
               alt="Maktab binosi"
-              className="relative rounded-3xl shadow-2xl w-full"
+              className="relative rounded-3xl shadow-2xl w-full object-center"
             />
           </div>
 
           <div className="space-y-8">
             <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/50">
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-2xl flex items-center justify-center mr-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-[#14253B] to-[#14253bd8] rounded-2xl flex items-center justify-center mr-4">
                   <Heart className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-primary-900">Bizning missiyamiz</h3>
+                <h3 className="text-2xl font-bold text-[#14253B]">Bizning missiyamiz</h3>
               </div>
               <p className="text-gray-700 leading-relaxed mb-4">
                 Har bir o'quvchining individual qobiliyatlarini rivojlantirish, ularni global dunyoda muvaffaqiyatli

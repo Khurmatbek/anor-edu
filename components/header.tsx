@@ -5,10 +5,16 @@ import { Button } from "@/components/ui/button"
 import { Menu, X, Phone, Mail } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const router = useRouter();
+
+  const handleScrollClick = () => {
+    router.push("#contact")
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,7 +29,7 @@ export function Header() {
       className={`sticky top-0 z-50 transition-all duration-200 ${isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-white shadow-sm"}`}
     >
       {/* Top bar */}
-      <div className="bg-primary text-white py-2">
+      <div className=" bg-[#14253A] text-white py-2">
         <div className="container mx-auto px-4 flex justify-between items-center text-xs sm:text-sm">
           <div className="flex items-center space-x-2 sm:space-x-4">
             <a href="tel:+998958988888" className="flex items-center space-x-1 cursor-pointer " >
@@ -31,10 +37,7 @@ export function Header() {
               <span className="hidden sm:inline">+998 95-898-88-88</span>
               <span className="sm:hidden">95-898-88-88</span>
             </a>
-            <div className="hidden sm:flex items-center space-x-1">
-              <Mail className="h-4 w-4" />
-              <span>info@anorinternational.uz</span>
-            </div>
+            
           </div>
           <div className="hidden lg:block text-xs">
             <span>Biz bilan bog'laning: Dushanba - Juma 8:00 - 18:00</span>
@@ -46,7 +49,7 @@ export function Header() {
       <div className="container mx-auto px-4 py-3 sm:py-4">
         <div className="flex justify-between items-center">
           <Link href="/" className="flex items-center space-x-2 sm:space-x-3">
-            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-primary to-primary-800 rounded-full flex items-center justify-center shadow-lg">
+            <div className="w-10 h-10 sm:w-12 sm:h-12  bg-[#14253A] rounded-full flex items-center justify-center shadow-lg">
               {/* <span className="text-white font-bold text-lg sm:text-xl"> */}
               <Image src="/logo.png" alt="Anor logo" width={100} height={100} />
               {/* </span> */}
@@ -75,12 +78,12 @@ export function Header() {
                 {item.name}
               </a>
             ))}
-            <Button className="bg-gradient-to-r from-primary to-primary-800 hover:from-primary-800 hover:to-primary transition-all duration-200 shadow-lg">
+            <Button onClick={handleScrollClick} className="bg-[#14253A] text-[#fff] hover:bg-[#14253A] shadow-lg">
               Ro'yxatdan o'tish
             </Button>
           </nav>
 
-          {/* Mobile menu button */}
+
           <button
             className="lg:hidden p-2 rounded-lg hover:bg-primary-50 transition-colors duration-200"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -113,9 +116,6 @@ export function Header() {
                   {item.name}
                 </a>
               ))}
-              <Button className="bg-gradient-to-r from-primary to-primary-800 hover:from-primary-800 hover:to-primary mx-4 mt-2 transition-all duration-200">
-                Ro'yxatdan o'tish
-              </Button>
             </div>
           </nav>
         </div>

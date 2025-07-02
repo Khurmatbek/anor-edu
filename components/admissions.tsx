@@ -3,10 +3,16 @@ import { useState, useEffect, useRef } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { CheckCircle, Calendar, FileText, Users, Clock, DollarSign } from "lucide-react"
+import { useRouter } from "next/navigation"
 
 export function Admissions() {
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef(null)
+  const router = useRouter();
+
+  const handleScrolClick = () => {
+    router.push("#contact")
+  }
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -68,7 +74,8 @@ export function Admissions() {
             <Calendar className="h-4 w-4 text-accent-600 mr-2" />
             <span className="text-accent-700 font-medium">Qabul jarayoni</span>
           </div>
-          <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-primary-900 to-secondary-700 bg-clip-text text-transparent mb-6">
+          <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#14253B]
+          to-[#14253bed] bg-clip-text text-transparent mb-6">
             Bizga qo'shiling!
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -100,7 +107,7 @@ export function Admissions() {
         <div className="grid lg:grid-cols-2 gap-12">
           <Card className="p-8 bg-white/80 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-shadow duration-300">
             <div className="flex items-center mb-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-success-500 to-success-600 rounded-2xl flex items-center justify-center mr-4">
+              <div className="w-12 h-12 bg-gradient-to-r from-[#14253B] to-[#14253bed] rounded-2xl flex items-center justify-center mr-4">
                 <FileText className="h-6 w-6 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900">Kerakli hujjatlar</h3>
@@ -108,14 +115,14 @@ export function Admissions() {
             <div className="space-y-4">
               {requirements.map((requirement, index) => (
                 <div key={index} className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-success-500 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-5 w-5 text-[#14253B] mt-0.5 flex-shrink-0" />
                   <span className="text-gray-700">{requirement}</span>
                 </div>
               ))}
             </div>
           </Card>
 
-          <Card className="p-8 bg-gradient-to-br from-primary-500 to-secondary-600 text-white shadow-xl hover:shadow-2xl transition-shadow duration-300">
+          <Card className="p-8 bg-gradient-to-br from-[#14253B] to-[#14253beb] text-white shadow-xl hover:shadow-2xl transition-shadow duration-300">
             <div className="flex items-center mb-6">
               <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mr-4">
                 <Clock className="h-6 w-6 text-white" />
@@ -124,8 +131,8 @@ export function Admissions() {
             </div>
             <div className="space-y-6">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4">
-                <h4 className="font-bold text-white mb-2">2024-2025 o'quv yili</h4>
-                <p className="text-white/90">Qabul: 1-mart dan 31-may gacha</p>
+                <h4 className="font-bold text-white mb-2">2025-2026 o'quv yili</h4>
+                <p className="text-white/90">Qabul: 1-iyul dan boshlab</p>
                 <p className="text-white/90">Darslar boshlanishi: 2-sentabr</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4">
@@ -133,10 +140,10 @@ export function Admissions() {
                   <DollarSign className="h-5 w-5 text-accent-300 mr-2" />
                   <h4 className="font-bold text-white">To'lov ma'lumotlari</h4>
                 </div>
-                <p className="text-white/90">Yillik to'lov: $3,000 - $5,000</p>
-                <p className="text-white/90">Ro'yxatdan o'tish: $500</p>
+                <p className="text-white/90">1-4-sinflar:4.700.000 soʻm</p>
+                <p className="text-white/90">5-11-sinflar: 4.900.000 soʻm</p>
               </div>
-              <Button className="w-full bg-white text-primary-600 hover:bg-accent-50 transition-all duration-300 hover:scale-105 rounded-xl font-semibold">
+              <Button onClick={handleScrolClick} className="w-full bg-white text-[#14253B] hover:bg-accent-50 transition-all duration-300 hover:scale-105 rounded-xl font-semibold">
                 Hoziroq ariza topshiring
               </Button>
             </div>
