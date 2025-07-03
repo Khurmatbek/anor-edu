@@ -4,12 +4,12 @@ import Link from "next/link"
 
 export function Footer() {
   return (
-    <footer className="bg-[#14253B]  text-white">
+    <footer className="bg-[#14253bf0]  text-white">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-2  justify-between">
           <div className="space-y-4">
             <Link href={"/"} className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
+              <div className="w-10 h-10 bg-[#14253B] rounded-full flex items-center justify-center">
                 <span className="text-white font-bold">
                   <Image src="/logo.png" alt="Anor logo" width={40} height={40} />
                 </span>

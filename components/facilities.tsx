@@ -84,7 +84,7 @@ export function Facilities() {
           </div>
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
             Zamonaviy jihozlar va
-            <span className="bg-gradient-to-r text-[#e1b137] bg-clip-text text-transparent block">
+            <span className="text-[#e1b137]  block">
               qulay muhit
             </span>
           </h2>

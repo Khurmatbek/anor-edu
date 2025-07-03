@@ -70,9 +70,9 @@ export function Admissions() {
     <section id="admissions" className="py-20 bg-gradient-to-br from-gray-50 to-primary-50/30" ref={sectionRef}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 bg-accent-100 rounded-full mb-6">
-            <Calendar className="h-4 w-4 text-accent-600 mr-2" />
-            <span className="text-accent-700 font-medium">Qabul jarayoni</span>
+          <div className="inline-flex items-center px-4 py-2 bg-[#14253B] rounded-full mb-6">
+            <Calendar className="h-4 w-4 text-white mr-2" />
+            <span className="text-white font-medium">Qabul jarayoni</span>
           </div>
           <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#14253B]
           to-[#14253bed] bg-clip-text text-transparent mb-6">

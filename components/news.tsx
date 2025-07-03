@@ -6,45 +6,41 @@ export function News() {
   const news = [
     {
       date: "01 Iyul 2025",
-      title: "Yangi o'quv yili uchun qabul boshlandi",
+      title: "Qabul",
       excerpt:
-        "2025-2026 o'quv yili uchun qabul jarayoni rasmiy ravishda boshlandi. ",
-      image: "/hero.jpg",
-      category: "Qabul",
-      gradient: "from-accent-500 to-accent-600",
+        "2025–2026 o‘quv yili uchun qabul jarayoni boshlandi. Sizni maktabimizda kutib qolamiz!",
+      image: "/tadbir.jpg",
     },
     {
       date: "01 Iyul 2025",
       title: "Xalqaro olimpiadada g'alaba",
       excerpt: "Maktabimiz o'quvchilari Matematika bo'yicha xalqaro olimpiadada yuqori natijalar ko'rsatdi.",
       image: "/dubai.jpg",
-      category: "Muvaffaqiyat",
-      gradient: "from-red-500 to-red-600",
+
     },
     {
       date: "01 Iyul 2025",
       title: "Sport musoboqalari",
       excerpt: "O‘quvchilar o‘rtasida sog‘lom raqobat ruhida o‘tgan sport musoboqalari yuqori kayfiyatda tashkil etildi.",
-      image: "/sport.jpg",
-      category: "Yangilik",
-      gradient: "from-secondary-500 to-secondary-600",
+      image: "/sport01.jpg",
+
     },
   ]
 
 
   return (
-    <section id="news" className="py-20 bg-gradient-to-br from-gray-50 to-primary-50/30">
+    <section id="news" className="py-20 bg-[#14253B]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 bg-[#14253B] rounded-full mb-6">
-            <Newspaper className="h-4 w-4 text-[#fff] mr-2" />
-            <span className="text-[#fff] font-medium">Yangiliklar</span>
+          <div className="inline-flex items-center px-4 py-2 bg-[#fff] rounded-full mb-6">
+            <Newspaper className="h-4 w-4 text-[#14253B] mr-2" />
+            <span className="text-[#14253B] font-medium">Yangiliklar</span>
           </div>
-          <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#14253B]
-          to-[#14253bed] bg-clip-text text-transparent mb-6">
+          <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#fff]
+          to-[#fff] bg-clip-text text-transparent mb-6">
             So'nggi yangiliklar
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
             Maktabimizning eng so'nggi yangiliklari, yutuqlari va voqealari bilan doimo xabardor bo'ling.
           </p>
         </div>
@@ -59,13 +55,9 @@ export function News() {
                 <img
                   src={item.image || "/placeholder.svg"}
                   alt={item.title}
-                  className="w-full min-h-[350px] h-full  group-hover:scale-110 transition-transform duration-500 object-cover"
+                  className="w-full  h-min-full  group-hover:scale-110 transition-transform duration-500 object-fill"
                 />
-                <div
-                  className={`absolute top-4 left-4 px-3 py-1 bg-gradient-to-r ${item.gradient} text-white text-sm font-semibold rounded-full`}
-                >
-                  {item.category}
-                </div>
+                
               </div>
               <CardHeader>
                 <div className="flex items-center text-sm text-gray-500 mb-2">

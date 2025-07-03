@@ -42,7 +42,7 @@ export function Hero() {
         ></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10 pt-20 pb-16">
+      <div className="container mx-auto px-4 relative z-10 pt-10 pb-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
           <div className={`space-y-8 ${isVisible ? "animate-fade-in" : "opacity-0"}`}>
             {/* Badge */}

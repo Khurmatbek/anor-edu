@@ -116,7 +116,7 @@ export function Contact() {
                 <div className="p-2 rounded-xl bg-gradient-to-r from-[#14253B] to-[#14253B]">
                   <Send className="h-6 w-6 text-white" />
                 </div>
-                <span className="bg-gradient-to-r text-[#14253B] bg-clip-text text-transparent">
+                <span className="text-[#14253B] ">
                   Xabar yuborish
                 </span>
               </CardTitle>
