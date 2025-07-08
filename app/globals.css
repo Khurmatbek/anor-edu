@@ -68,23 +68,6 @@
   }
 }
 
-/* Modern scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f5f9;
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #190b2e, #6366f1);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #2d1b4e, #4f46e5);
-}
 
 /* Smooth scrolling */
 html {
@@ -102,7 +85,6 @@ html {
 .gradient-text {
   background: linear-gradient(135deg, #190b2e, #6366f1, #f59e0b);
   background-size: 200% 200%;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradient-shift 3s ease infinite;
 }
@@ -127,7 +109,6 @@ html {
 .gradient-text-full {
   background: linear-gradient(135deg, #190b2e, #6366f1, #ef4444, #f59e0b, #10b981);
   background-size: 300% 300%;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradient-shift 4s ease infinite;
 }

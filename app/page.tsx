@@ -6,18 +6,23 @@ import { Admissions } from "@/components/admissions"
 import { News } from "@/components/news"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
+import Atmosphere from "@/components/atmosphere"
+import { Suspense } from "react"
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
-      <Header />
-      <Hero />
-      <About />
-      <Facilities />
-      <Admissions />
-      <News />
-      <Contact />
-      <Footer />
-    </div>
+    <Suspense>
+      <div className="min-h-screen" suppressHydrationWarning={true}>
+        <Header />
+        <Hero />
+        <Atmosphere />
+        <About />
+        <Facilities />
+        <Admissions />
+        <News />
+        <Contact />
+        <Footer />
+      </div>
+    </Suspense>
   )
 }

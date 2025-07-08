@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: 'Anor International School',
   description: "Anor International School - Kelajak uchun ta'lim berish",
   themeColor: "#190b2e",
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+
+  },
   keywords: [
     'Anor International School',
     "O'zbekiston maktabi",
@@ -68,7 +74,7 @@ export default function RootLayout({
 
         <meta name="theme-color" content="#0f172a" />
       </head>
-      <body>
+      <body suppressHydrationWarning={true}>
         {/* GTM noscript */}
         {process.env.NODE_ENV === "production" && (
           <noscript>
@@ -96,6 +102,6 @@ export default function RootLayout({
 
         {children}
       </body>
-    </html>
+    </html >
   )
 }
